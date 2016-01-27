@@ -17,7 +17,8 @@
         %h1.svg-wrapper
           = inline_svg "video-mask.svg"
         .action-wrapper
-          %a.cd-btn{:href => "contact.html"} Contact Us
+          .cd-btn
+            = link_to 'Contact Us', page_path('contact')
           %a.cd-btn.main-action{:href => "#0"} Learn More
         .cd-bg-video-wrapper{"data-video" => "assets/video"}
     / video element will be loaded using jQuery
