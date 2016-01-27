@@ -55,6 +55,7 @@ group :development do
   gem 'pry-byebug'
   gem 'better_errors', '~> 1.1'
   gem 'binding_of_caller'
+  gem 'sqlite3'
 end
 
 group :development, :test do
