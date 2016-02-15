@@ -1,3 +1,5 @@
+ruby '2.3.0'
+
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -37,9 +39,6 @@ end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use unicorn as the app server
-gem 'unicorn'
-
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
@@ -69,4 +68,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.1'
   gem 'rspec-html-matchers', '~> 0.6.1'
   gem 'shoulda-matchers'
+end
+
+group :production do
+  gem 'puma'
 end
