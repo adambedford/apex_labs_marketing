@@ -1,7 +1,12 @@
-= "New message from: #{@message.name}"
+.sender
+  %p= "New message from: #{@message.name}"
 
-= "Comapny: #{@message.company}"
-= "Email: #{@message.email}"
+.company
+  %p= "Comapny: #{@message.company}"
 
-Message Content:
-= @message.content
+.email
+  %p= "Email: #{@message.email}"
+
+.content
+  %p Message Content:
+  %p= @message.content
