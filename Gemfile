@@ -46,9 +46,14 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'dotenv'
+gem 'dotenv-rails'
+gem 'email_validator'
 gem 'foreman'
 gem 'haml-rails'
 gem 'high_voltage', '~> 2.4.0'
+gem 'modernizr-rails'
+gem 'simple_form'
 
 group :development do
   gem 'pry'

@@ -5,4 +5,7 @@ Marketing::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root to: 'high_voltage/pages#show', id: 'home'
 
+  get 'contact', to: 'messages#new', as: 'contact'
+  post 'contact', to: 'messages#create'
+
 end

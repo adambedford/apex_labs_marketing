@@ -1,0 +1,50 @@
+<nav class="cd-vertical-nav">
+  <ul>
+    <li><a href="#section1" class="active"><span class="label">Home</span></a></li>
+    <li><a href="#section2"><span class="label">About</span></a></li>
+    <li><a href="#section3"><span class="label">Services</span></a></li>
+    <li><a href="#section4"><span class="label">Contact</span></a></li>
+  </ul>
+</nav><!-- .cd-vertical-nav -->
+
+<button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
+
+<section id="section1" class="cd-section">
+  <div class="content-wrapper">
+    <!-- video -->
+    <div class="homepage-hero-module">
+      <div class="video-container">
+        <%= video_tag "video.mp4", autoplay: true, class: "fillWidth", loop: true %>
+        <div class="layer"></div>
+        <div class="overlay">
+          <%= image_tag "logo.png", class: "logo" %>
+          <br><br><br>
+          <h1>Web Consulting &</h1>
+          <h1>Venture Product Development</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- cd-section -->
+
+<section id="section2" class="cd-section">
+  <div class="content-wrapper">
+    <h2>About</h2>
+    <p>We are a software and technology development firm who design, develop and grow websites and web applications.</p>
+    <p>We build scalable software using a variety of technologies and know which tools to use to guarantee the success of your project.</p>
+  </div>
+</section><!-- cd-section -->
+
+<section id="section3" class="cd-section">
+  <div class="content-wrapper">
+    <h2 style="color: #ffffff">Services</h2>
+    <p>Web Application Development</p>
+    <p>E-Commerce</p>
+    <p>Website Design and Branding</p>
+    <p>Digital Marketing and Consulting</p>
+  </div>
+</section><!-- cd-section -->
+
+<section id="section4" class="cd-section">
+  <%= render partial: 'pages/contact_form' %>
+</section><!-- cd-section -->

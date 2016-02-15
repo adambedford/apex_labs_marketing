@@ -1,52 +1,35 @@
-<!doctype html>
-%html.no-js{:lang => "en"}
-  %head
-    %meta{:charset => "UTF-8"}
-      %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
-        %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,300,700", :rel => "stylesheet", :type => "text/css"}
-          %link{:href => "../apex_labs_marketing/app/assets/stylesheets/contact_reset.css", :rel => "stylesheet"}
-            / CSS reset
-            %link{:href => "../apex_labs_marketing/app/assets/stylesheets/contact_style.css", :rel => "stylesheet"}
-              / Resource style
-              %script{:src => "../apex_labs_marketing/app/assets/javascripts/modernizr.js"}
-              / Modernizr
-              %title Apex Labs
-  %body
-    %form.cd-form.floating-labels
-      %fieldset
-        %legend
-          %a.logo
-            .logo=image_tag "logo.png"
+%form.cd-form.floating-labels
+  %fieldset
+    %legend
+      %a.logo
+        .logo=image_tag "logo.png"
+      %br
+        %br
           %br
-            %br
-              %br
-                Contact Form
-        .error-message
-          %p Please enter a valid email address
-        .icon
-          %label.cd-label{:for => "cd-name"} Name
-          %input#cd-name.user{:name => "cd-name", :required => "", :type => "text"}
-        .icon
-          %label.cd-label{:for => "cd-company"} Company
-          %input#cd-company.company{:name => "cd-company", :type => "text"}
-        .icon
-          %label.cd-label{:for => "cd-email"} Email
-          %input#cd-email.email.error{:name => "cd-email", :required => "", :type => "email"}
-      %fieldset
-        %legend Project Info
-        %div
-          %h4 Budget
-          %p.cd-select.icon
-            %select.budget
-              %option{:value => "0"} Select Budget
-              %option{:value => "1"} &lt; $5,000
-              %option{:value => "2"} $5,000 - $10,000
-              %option{:value => "3"} &gt; $10,000
-        .icon
-          %label.cd-label{:for => "cd-textarea"} Project description
-          %textarea#cd-textarea.message{:name => "cd-textarea", :required => ""}
-        %div
-          %input{:type => "submit", :value => "Send Message"}
-    %script{:src => "../apex_labs_marketing/app/assets/javascripts/jquery-2.1.4.js"}
-    %script{:src => "../apex_labs_marketing/app/assets/javascripts/contact_main.js"}
-      / Resource jQuery
+            Contact Form
+    .error-message
+      %p Please enter a valid email address
+    .icon
+      %label.cd-label{:for => "cd-name"} Name
+      %input#cd-name.user{:name => "cd-name", :required => "", :type => "text"}
+    .icon
+      %label.cd-label{:for => "cd-company"} Company
+      %input#cd-company.company{:name => "cd-company", :type => "text"}
+    .icon
+      %label.cd-label{:for => "cd-email"} Email
+      %input#cd-email.email.error{:name => "cd-email", :required => "", :type => "email"}
+  %fieldset
+    %legend Project Info
+    %div
+      %h4 Budget
+      %p.cd-select.icon
+        %select.budget
+          %option{:value => "0"} Select Budget
+          %option{:value => "1"} &lt; $5,000
+          %option{:value => "2"} $5,000 - $10,000
+          %option{:value => "3"} &gt; $10,000
+    .icon
+      %label.cd-label{:for => "cd-textarea"} Project description
+      %textarea#cd-textarea.message{:name => "cd-textarea", :required => ""}
+    %div
+      %input{:type => "submit", :value => "Send Message"}

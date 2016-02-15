@@ -1,0 +1,27 @@
+<!doctype html>
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "UTF-8"}
+      %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+        %link{:href => "https://fonts.googleapis.com/css?family=Open+Sans:300,700,400", :rel => "stylesheet", :type => "text/css"}
+          %link{:href => "app/assets/stylesheets/reset.css.scss", :rel => "stylesheet"}
+            / CSS reset
+            %link{:href => "app/assets/stylesheets/style.css.scss", :rel => "stylesheet"}
+              / Resource style
+              %script{:src => "app/assets/javascripts/modernizr.js"}
+              / Modernizr
+              %title Apex Labs
+  %body
+    %section.cd-intro.video
+      .cd-intro-content.video
+        %h1.svg-wrapper
+          = inline_svg "video-mask.svg"
+        .action-wrapper
+          .cd-btn
+            = link_to 'Contact Us', page_path('contact')
+          %a.cd-btn.main-action{:href => "#0"} Learn More
+        .cd-bg-video-wrapper{"data-video" => "assets/video"}
+    / video element will be loaded using jQuery
+    %script{:src => "app/assets/javascripts/jquery-2.1.4.js"}
+    %script{:src => "app/assets/javascripts/main.js"}
+      / Resource jQuery
