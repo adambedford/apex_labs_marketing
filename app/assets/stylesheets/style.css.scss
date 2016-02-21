@@ -454,6 +454,62 @@ Content Sections - basic style
     background: image_url('cd-arrow-bottom.svg') no-repeat center center;
 }
 
+.split-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.split-item {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+
+  width: 50%;
+}
+
+.split-right {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+
+  background: #fff;
+}
+
+.split-left {
+  background: #fff;
+}
+
+.split-image img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
 /* -------------------------------- 
 
 no-js
@@ -598,7 +654,7 @@ Form Styles
 
 .field-in {
     display: block;
-    margin: 10px auto;
+    margin: 30px auto;
     padding: 10px;
     border-radius: 2px;
     border: none;
@@ -767,8 +823,8 @@ Services Styles
   margin-right: auto;
   position: relative;
   margin-top: -60px;
-  width:120px;
-  height:120px;
+  width:110px;
+  height:110px;
   background: #C1BEBE;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.09);
   background-repeat: no-repeat;
@@ -799,4 +855,37 @@ Services Styles
 .marketing {
   @extend .teamimg;
   background-image: url("marketing.png");
+}
+
+/* --------------------------------
+
+Typewriter
+
+-------------------------------- */
+
+.line-1{
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 27em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(59,59,59,.75);}
+  to{border-right-color: transparent;}
 }
