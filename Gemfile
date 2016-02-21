@@ -54,6 +54,8 @@ gem 'high_voltage', '~> 2.4.0'
 gem 'modernizr-rails'
 gem 'simple_form'
 
+gem 'rails_real_favicon'
+
 group :development do
   gem 'pry'
   gem 'pry-byebug'
