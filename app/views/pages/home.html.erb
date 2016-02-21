@@ -46,9 +46,22 @@
 <section id="section3" class="cd-section">
   <div class="content-wrapper">
     <%= render partial: 'pages/services' %>
+
   </div>
 </section><!-- cd-section -->
 
 <section id="section4" class="cd-section">
-  <%= render partial: 'pages/contact_form' %>
+  <div class="content-wrapper">
+    <div class="split-container">
+      <div class="split-item split-left">
+        <%= render partial: 'pages/contact_form' %>
+      </div>
+
+      <div class="split-item split-right">
+        <div class="split-image">
+          <%= image_tag "pong.png" %>
+        </div>
+      </div>
+    </div>
+  </div>
 </section><!-- cd-section -->

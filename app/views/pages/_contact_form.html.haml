@@ -1,19 +1,18 @@
-.content-wrapper
-  %h2 Contact Us
+%h2 Contact Us
 
-  .form-wrapper
+.form-wrapper
 
-    = form_for Message.new, url: contact_path(format: :json), remote: true, html: { class: 'form contact-form' } do |f|
+  = form_for Message.new, url: contact_path(format: :json), remote: true, html: { class: 'form contact-form' } do |f|
 
-      .form-feedback
-        %ul
+    .form-feedback
+      %ul
 
-      = f.text_field :name, class: 'name field-in font input', placeholder: 'Your Name', required: true
+    = f.text_field :name, class: 'name field-in font input', placeholder: 'Your Name', required: true
 
-      = f.text_field :company, class: 'company field-in font input', placeholder: 'Company', required: true
+    = f.text_field :company, class: 'company field-in font input', placeholder: 'Company', required: true
 
-      = f.text_field :email, class: 'email field-in font input', placeholder: 'Email', required: true
+    = f.text_field :email, class: 'email field-in font input', placeholder: 'Email', required: true
 
-      = f.text_area :content, label: 'Project Description', class: 'message field-in font input', placeholder: 'Project Description', required: true
+    = f.text_area :content, label: 'Project Description', class: 'message field-in font input', placeholder: 'Project Description', required: true
 
-      = f.submit 'Send', class: 'submit form-font'
+    = f.submit 'Send', class: 'submit form-font'
