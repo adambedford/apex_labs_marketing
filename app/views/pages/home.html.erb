@@ -26,42 +26,18 @@
   </div>
 </section><!-- cd-section -->
 
+
+
 <section id="section2" class="cd-section split-section">
-  <div class="content-wrapper">
-    <div class="split-container">
-      <div class="split-item split-right">
-        <h2>About</h2>
-        <p>We are a software and technology development firm that designs, develops and grows websites and web applications.</p>
-        <p>We build scalable software using a variety of technologies and know which tools to use to guarantee the success of your project.</p>
-      </div>
-      <div class="split-item split-left">
-        <div class="split-image">
-          <%= image_tag "Office.png" %>
-        </div>
-      </div>
-    </div>
-  </div>
+    <%= render partial: 'pages/about' %>
 </section><!-- cd-section -->
 
 <section id="section3" class="cd-section">
   <div class="content-wrapper">
-    <%= render partial: 'pages/services' %>
-
+    <%= render partial: 'pages/services2' %>
   </div>
 </section><!-- cd-section -->
 
 <section id="section4" class="cd-section">
-  <div class="content-wrapper">
-    <div class="split-container">
-      <div class="split-item split-left">
-        <%= render partial: 'pages/contact_form' %>
-      </div>
-
-      <div class="split-item split-right">
-        <div class="split-image">
-          <%= image_tag "pong.png" %>
-        </div>
-      </div>
-    </div>
-  </div>
+    <%= render partial: 'pages/contact' %>
 </section><!-- cd-section -->
