@@ -1,0 +1,14 @@
+@media (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+  .column-center {
+    width: 60%;
+  }
+}
+
+@media (min-width: 800px) {
+  .mobile {
+    display: none;
+  }
+}

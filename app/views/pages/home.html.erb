@@ -1,43 +1,50 @@
-<nav class="cd-vertical-nav">
-  <ul>
-    <li><a href="#section1" class="active"><span class="label">Home</span></a></li>
-    <li><a href="#section2"><span class="label">About</span></a></li>
-    <li><a href="#section3"><span class="label">Services</span></a></li>
-    <li><a href="#section4"><span class="label">Contact</span></a></li>
-  </ul>
-</nav><!-- .cd-vertical-nav -->
+<div class="desktop">
+  <nav class="cd-vertical-nav">
+    <ul>
+      <li><a href="#section1" class="active"><span class="label">Home</span></a></li>
+      <li><a href="#section2"><span class="label">About</span></a></li>
+      <li><a href="#section3"><span class="label">Services</span></a></li>
+      <li><a href="#section4"><span class="label">Contact</span></a></li>
+    </ul>
+  </nav><!-- .cd-vertical-nav -->
 
-<button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
+  <button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
 
-<section id="section1" class="cd-section">
-  <div class="content-wrapper">
-    <!-- video -->
-    <div class="homepage-hero-module">
-      <div class="video-container">
-        <%= video_tag "video.mp4", autoplay: true, class: "fillWidth", loop: true %>
-        <div class="layer"></div>
-        <div class="overlay">
-          <%= image_tag "logo.png", class: "logo" %>
-          <br><br><br><br><br><br><br>
-          <h2 class="line-1 anim-typewriter">Web Consulting & Venture Product Development </h2>
+  <section id="section1" class="cd-section">
+    <div class="content-wrapper">
+      <!-- video -->
+      <div class="homepage-hero-module">
+        <div class="video-container">
+          <%= video_tag "video.mp4", autoplay: true, class: "fillWidth", loop: true %>
+          <div class="layer">
+          <div class="overlay">
+            <%= image_tag "logo.png", class: "logo" %>
+            <br><br><br><br><br><br><br>
+            <h2 class="line-1 anim-typewriter">Web Consulting & Venture Product Development </h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section><!-- cd-section -->
+  </section><!-- cd-section -->
 
 
 
-<section id="section2" class="cd-section split-section">
-    <%= render partial: 'pages/about' %>
-</section><!-- cd-section -->
+  <section id="section2" class="cd-section split-section">
+      <%= render partial: 'pages/about' %>
+  </section><!-- cd-section -->
 
-<section id="section3" class="cd-section">
-  <div class="content-wrapper">
-    <%= render partial: 'pages/services2' %>
-  </div>
-</section><!-- cd-section -->
+  <section id="section3" class="cd-section">
+    <div class="content-wrapper">
+      <%= render partial: 'pages/services2' %>
+    </div>
+  </section><!-- cd-section -->
 
-<section id="section4" class="cd-section">
-    <%= render partial: 'pages/contact' %>
-</section><!-- cd-section -->
+  <section id="section4" class="cd-section">
+      <%= render partial: 'pages/contact' %>
+  </section><!-- cd-section -->
+</div>
+
+<div class="mobile">
+  <%= render partial: 'pages/mobile' %>
+</div>
