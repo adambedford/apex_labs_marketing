@@ -5,6 +5,18 @@
   .column-center {
     width: 60%;
   }
+  .mobile-submit{
+    border-radius:2px;
+    padding:10px 20px;
+    background-color: #EE2E54;
+    border: none;
+    border-bottom: 2px solid #C91C45;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    color: white;
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: 800px) {
